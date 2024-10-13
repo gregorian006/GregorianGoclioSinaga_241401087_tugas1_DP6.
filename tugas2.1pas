@@ -1,0 +1,17 @@
+program Genap;
+uses crt;
+var
+  bil, i: integer;
+begin
+clrscr;
+  write('Masukkan bilangan bulat positif : ');
+  readln(bil);
+
+  i := 0; // Mulai dari bilangan genap terkecil
+  while i <= bil do
+    begin
+        writeln(i);
+        i := i + 2; // Langsung ke bilangan genap berikutnya
+    end;
+
+end.

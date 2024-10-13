@@ -1,0 +1,19 @@
+program AngkaPositif;
+uses crt;
+var
+  angka, positif: integer;
+begin
+clrscr;
+  positif := 0; // Input angka positif
+
+  repeat
+    write('Masukkan angka (angka negatif untuk berhenti): ');
+    readln(angka);
+
+    if angka > 0 then
+      positif := positif + 1;
+  until angka < 0;
+
+  writeln('Jumlah angka positif yang dimasukkan: ', positif);
+  readln;
+end.
